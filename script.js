@@ -8,6 +8,6 @@ enterButton.addEventListener("click", function() {
     // Change the text content of the paragraph
     statusParagraph.textContent = "Entered Metaverse";
     
-    // Display the updated text in an h1 tag
+    statusParagraph.appendChild(outputHeading);
     outputHeading.textContent = "Entered Metaverse";
 });
