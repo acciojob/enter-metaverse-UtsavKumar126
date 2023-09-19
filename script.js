@@ -10,6 +10,7 @@ function  func() {
 
 	const headingTag=document.createElement("h1");
 	headingTag.innerText="Entered Metaverse";
+	headingTag.id="status"
 
 	const bodyTag=document.getElementsByTagName("BODY")[0];
 	bodyTag.insertBefore(headingTag,buttons);	
