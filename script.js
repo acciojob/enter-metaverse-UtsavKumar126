@@ -1,17 +1,13 @@
-//your JS code here. If required.
-const buttons=document.getElementById("enterBtn");
+// Get references to the HTML elements
+const statusParagraph = document.getElementById("status");
+const enterButton = document.getElementById("enterBtn");
+const outputHeading = document.getElementById("output");
 
-document.getElementById("enterBtn").addEventListener("click", func);
-
-
-function  func() {
-	const para=document.getElementById("status");
-	para.remove();
-
-	const headingTag=document.createElement("h1");
-	headingTag.innerText="Entered Metaverse";
-	headingTag.id="status"
-
-	const bodyTag=document.getElementsByTagName("BODY")[0];
-	bodyTag.insertBefore(headingTag,buttons);	
-}
+// Add a click event listener to the button
+enterButton.addEventListener("click", function() {
+    // Change the text content of the paragraph
+    statusParagraph.textContent = "Entered Metaverse";
+    
+    // Display the updated text in an h1 tag
+    outputHeading.textContent = "Entered Metaverse";
+});
